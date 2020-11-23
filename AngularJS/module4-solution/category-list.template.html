@@ -1,0 +1,10 @@
+<a ui-sref="home">Menu</a> &lt; <span>Category</span>
+
+<h3>Category List</h3>
+<ul>
+  <li ng-repeat="item in cateLstCtrl.items" class="ng-scope">
+    <a ui-sref="items({category: item.short_name})" class="ng-binding"> {{item.name}} </a>
+  </li>
+</ul>
+
+<ui-view></ui-view>
